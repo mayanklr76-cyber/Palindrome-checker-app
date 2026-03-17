@@ -1,24 +1,25 @@
-// UseCase2PalindromeCheckerApp.java
+// UseCase3PalindromeCheckerApp.java
 
 public class PalindroneCheckerApp {
 
     public static void main(String[] args) {
 
         // Hardcoded string
-        String str = "madam";
+        String original = "level";
 
-        // Reverse the string
+        // Variable to store reversed string
         String reversed = "";
 
-        for (int i = str.length() - 1; i >= 0; i--) {
-            reversed = reversed + str.charAt(i);
+        // Reverse the string using for loop
+        for (int i = original.length() - 1; i >= 0; i--) {
+            reversed = reversed + original.charAt(i);
         }
 
-        // Check if palindrome using if-else
-        if (str.equals(reversed)) {
-            System.out.println("The string \"" + str + "\" is a Palindrome.");
+        // Compare original and reversed using equals()
+        if (original.equals(reversed)) {
+            System.out.println("The string \"" + original + "\" is a Palindrome.");
         } else {
-            System.out.println("The string \"" + str + "\" is NOT a Palindrome.");
+            System.out.println("The string \"" + original + "\" is NOT a Palindrome.");
         }
     }
 }
